@@ -1,0 +1,36 @@
+{
+  "name": "grammarly-example-editor-sdk-react-tiptap",
+  "version": "1.0.0",
+  "description": "Example that uses @grammarly/editor-sdk-react with TipTap",
+  "main": "src/index.js",
+  "dependencies": {
+    "@grammarly/editor-sdk-react": "2.3.9",
+    "@tiptap/pm": "^2.0.0-beta.218",
+    "@tiptap/react": "^2.0.0-beta.218",
+    "@tiptap/starter-kit": "^2.0.0-beta.218",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-scripts": "3.4.3"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

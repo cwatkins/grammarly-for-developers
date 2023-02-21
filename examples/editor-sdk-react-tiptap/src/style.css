@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+[contenteditable] {
+  font: inherit;
+  line-height: 1.5;
+  width: 600px;
+  padding: 8px 12px;
+  overflow: auto;
+  height: 10rem;
+  border: 1px solid;
+  resize: both;
+}
+
+.ProseMirror {
+  padding: 4px 14px !important;
+}
+
+.ProseMirror .tableWrapper {
+  margin-block-end: 1em;
+}
+
+.ProseMirror .tableWrapper td p {
+  margin: 0px;
+}
+
+.ProseMirror .column-resize-handle {
+  z-index: 15;
+  background-color: #f9bbd7 !important;
+}
