@@ -9,10 +9,6 @@ import { demoClientId, demoText } from 'src/demo';
 })
 export class AppComponent implements OnInit {
   demoText = demoText;
-  contenteditable = demoText.contenteditable;
-  log(e: InputEvent) {
-    console.log(e);
-  }
   ngOnInit() {
     (async () => {
       const config: EditorConfig = {
