@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h2>Textarea</h2>
+  <textarea [(ngModel)]="demoText.textarea" rows="10"></textarea>
+  <h2>Input</h2>
+  <label for="test-input">Label</label>
+  <input [(ngModel)]="demoText.input" id="test-input" />
+  <h2>Contenteditable</h2>
+  <!-- Note: There is no two-way binding on contenteditable -->
+  <div contenteditable="true" [innerHTML]="demoText.contenteditable"></div>
+</div>
