@@ -4,7 +4,7 @@ This demo React app displays a `<textarea>` with sample text in it. You can use 
 
 ## Try the demo
 
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/demo-angular?file=/src/app.component.ts).
+You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/demo-angular/).
 
 Note that this demo does _not_ contain the code for using the SDK, so Grammarly suggestions will not appear in the app automatically.
 
