@@ -1,6 +1,6 @@
 # Demo Angular App
 
-This demo React app displays a `<textarea>` with sample text in it. You can use this app while exploring how to use the [Grammarly Text Editor SDK](https://developer.grammarly.com/).
+This demo Angular app displays a `<textarea>` with sample text in it. You can use this app while exploring how to use the [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
 ## Try the demo
 
