@@ -20,4 +20,4 @@ A copy of this code is available in the [Grammarly for Developers GitHub repo](h
 
 ## Ask a question
 
-If you want to ask a question, share a suggestion, or chat about how you're using the Grammarly Text Editor SDK in your application, join us in the [Grammarly for Developers community on GitHub](https://github.com/grammarly/grammarly-for-developers/discussions).
+If you want to ask a question, share a suggestion, or chat about how you're using the Grammarly Text Editor SDK in your application, join us on the [Grammarly for Developers discussion board](https://github.com/grammarly/grammarly-for-developers/discussions).
