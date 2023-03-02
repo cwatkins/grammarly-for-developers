@@ -15,7 +15,7 @@ These apps show the basics of how to add the Grammarly Text Editor Plugin to tex
 - [Basic SDK Example (JavaScript)](./editor-sdk)
 - [Basic SDK Example (React)](./editor-sdk-react/)
 - [Basic SDK Example (Vue)](./editor-sdk-vue/)
-- [Basic SDK Example (React)](./editor-sdk-angular/)
+- [Basic SDK Example (Angular)](./editor-sdk-angular/)
 
 ### Starter Apps
 
