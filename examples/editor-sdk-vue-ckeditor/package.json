@@ -10,7 +10,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "32.0.0",
     "@ckeditor/ckeditor5-vue2": "3.0.0",
-    "@grammarly/editor-sdk-vue": "2.3.11",
+    "@grammarly/editor-sdk-vue": "2.3.12",
     "@vue/cli-plugin-babel": "4.1.1",
     "vue": "^2.6.11"
   },

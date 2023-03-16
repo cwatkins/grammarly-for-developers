@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "path": "^0.12.7",
-    "@grammarly/editor-sdk-vue": "2.3.11",
+    "@grammarly/editor-sdk-vue": "2.3.12",
     "@vue/cli-plugin-babel": "4.1.1",
     "vue": "^2.6.11"
   }

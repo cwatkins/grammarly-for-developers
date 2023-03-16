@@ -47,14 +47,16 @@
   </head>
   <body>
     <h2>Plugin Turned Off Event</h2>
-    <grammarly-editor-plugin config.introText="We use Grammarly to give you writing assistance.">
+    <grammarly-editor-plugin
+      config.introText="We use Grammarly to give you writing assistance."
+    >
       <div contenteditable="true">
         <h3>The basics</h3>
         <p>
-          Mispellings and grammatical errors can effect your credibility. The same
-          goes for misused commas, and other types of punctuation . Not only will
-          Grammarly underline these issues in red, it will also showed you how to
-          correctly write the sentence.
+          Mispellings and grammatical errors can effect your credibility. The
+          same goes for misused commas, and other types of punctuation . Not
+          only will Grammarly underline these issues in red, it will also showed
+          you how to correctly write the sentence.
         </p>
       </div>
     </grammarly-editor-plugin>
@@ -66,29 +68,33 @@
       <h3>Events History:</h3>
       <p id="events-information">No Event</p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.11/lib/index.iife.min.js?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.12/lib/index.iife.min.js?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
     <script>
-      const editor = document.querySelector("grammarly-editor-plugin")
+      const editor = document.querySelector("grammarly-editor-plugin");
 
-      editor.addEventListener("plugin-turned-off", updateLastEvent)
-      editor.addEventListener("plugin-error", updateLastEvent)
-      editor.addEventListener("document-stats", updateLastEvent)
-      editor.addEventListener("session-stats", updateLastEvent)
-      editor.addEventListener("suggestion-card-open", updateLastEvent)
-      editor.addEventListener("suggestion-card-close", updateLastEvent)
+      editor.addEventListener("plugin-turned-off", updateLastEvent);
+      editor.addEventListener("plugin-error", updateLastEvent);
+      editor.addEventListener("document-stats", updateLastEvent);
+      editor.addEventListener("session-stats", updateLastEvent);
+      editor.addEventListener("suggestion-card-open", updateLastEvent);
+      editor.addEventListener("suggestion-card-close", updateLastEvent);
 
-      const events = []
+      const events = [];
       function updateLastEvent(event) {
-        events.unshift(event)
-        document.getElementById("events-information").innerHTML = events.map((e, i) => `
+        events.unshift(event);
+        document.getElementById("events-information").innerHTML = events
+          .map(
+            (e, i) => `
         <div class="event ${i % 2 == 1 ? "a" : "b"}">
         ${JSON.stringify({
           type: e.type,
-          detail: e.detail
+          detail: e.detail,
         })}
         </div>
-        `).join("\n")
-        document.getElementById("events-count").innerHTML = events.length
+        `
+          )
+          .join("\n");
+        document.getElementById("events-count").innerHTML = events.length;
       }
     </script>
   </body>

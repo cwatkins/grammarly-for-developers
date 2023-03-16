@@ -40,28 +40,30 @@
   </head>
   <body>
     <h2>Intro Text Example</h2>
-      <grammarly-editor-plugin config.introText="We use Grammarly to give you writing assistance.">
-        <div contenteditable="true">
-          <h3>The basics</h3>
-          <p>
-            Mispellings and grammatical errors can effect your credibility. The same
-            goes for misused commas, and other types of punctuation . Not only will
-            Grammarly underline these issues in red, it will also showed you how to
-            correctly write the sentence.
-          </p>
-        </div>
-      </grammarly-editor-plugin>
+    <grammarly-editor-plugin
+      config.introText="We use Grammarly to give you writing assistance."
+    >
+      <div contenteditable="true">
+        <h3>The basics</h3>
+        <p>
+          Mispellings and grammatical errors can effect your credibility. The
+          same goes for misused commas, and other types of punctuation . Not
+          only will Grammarly underline these issues in red, it will also showed
+          you how to correctly write the sentence.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
     <p>
       <button id="reset">Show intro again</button>
     </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.11/lib/index.iife.min.js?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.12/lib/index.iife.min.js?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
     <script>
-      document.getElementById("reset").addEventListener("click", function() {
-        localStorage.clear()
-        sessionStorage.clear()
-        window.location.reload()
-      })
+      document.getElementById("reset").addEventListener("click", function () {
+        localStorage.clear();
+        sessionStorage.clear();
+        window.location.reload();
+      });
     </script>
   </body>
 </html>
