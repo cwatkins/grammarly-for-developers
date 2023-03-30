@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Demo App</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      body {
+        font-family: sans-serif;
+      }
 
-    body {
-      font-family: sans-serif;
-    }
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        padding: 8px 12px;
+        overflow: auto;
+      }
 
-    input,
-    textarea,
-    [contenteditable] {
-      font: inherit;
-      line-height: 1.5;
-      padding: 8px 12px;
-      overflow: auto;
-    }
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
 
-    label {
-      display: block;
-      margin-bottom: 4px;
-    }
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
+        resize: both;
+      }
+    </style>
+  </head>
 
-    [contenteditable] {
-      height: 10rem;
-      border: 1px solid;
-      resize: both;
-    }
-  </style>
-</head>
+  <body>
+    <h2>CKEditor Classic Editor</h2>
+    <!-- Wrap the div with <grammarly-editor-plugin> to add Grammarly suggestions -->
+    <grammarly-editor-plugin>
+      <div id="ck-div" contenteditable="true">
+        <h3>The basics</h3>
+        <p>
+          Mispellings and grammatical errors can effect your credibility. The
+          same goes for misused commas, and other types of punctuation . Not
+          only will Grammarly underline these issues in red, it will also showed
+          you how to correctly write the sentence.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
 
-<body>
-  <h2>CKEditor Classic Editor</h2>
-  <!-- Wrap the div with <grammarly-editor-plugin> to add Grammarly suggestions -->
-  <grammarly-editor-plugin>
-    <div id="ck-div" contenteditable="true">
-      <h3>The basics</h3>
-      <p>
-        Mispellings and grammatical errors can effect your credibility. The
-        same goes for misused commas, and other types of punctuation . Not
-        only will Grammarly underline these issues in red, it will also showed
-        you how to correctly write the sentence.
-      </p>
-    </div>
-  </grammarly-editor-plugin>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
 
-  <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script>
+      // Create a classic editor instance
+      ClassicEditor.create(document.getElementById("ck-div"));
 
-  <script>
+      // Configure the Grammarly Text Editor SDK
+      document
+        .querySelectorAll("grammarly-editor-plugin")
+        .forEach((grammarlyEditor) => {
+          grammarlyEditor.config = {
+            autocomplete: "on",
+            documentDialect: "british",
+          };
+        });
+    </script>
 
-    // Create a classic editor instance
-    ClassicEditor.create(document.getElementById("ck-div"));
-
-    // Configure the Grammarly Text Editor SDK
-    document.querySelectorAll("grammarly-editor-plugin").forEach((grammarlyEditor) => {
-      grammarlyEditor.config = { autocomplete: "on", documentDialect: "british" };
-    });
-
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.13?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.1.14?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  </body>
 </html>

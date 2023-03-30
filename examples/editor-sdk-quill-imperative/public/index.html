@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Demo App</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      body {
+        font-family: sans-serif;
+      }
 
-    body {
-      font-family: sans-serif;
-    }
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        padding: 8px 12px;
+      }
 
-    input,
-    textarea,
-    [contenteditable] {
-      font: inherit;
-      line-height: 1.5;
-      padding: 8px 12px;
-    }
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
 
-    label {
-      display: block;
-      margin-bottom: 4px;
-    }
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
+        resize: both;
+      }
+    </style>
+  </head>
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
 
-    [contenteditable] {
-      height: 10rem;
-      border: 1px solid;
-      resize: both;
-    }
-  </style>
-</head>
-<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+  <body>
+    <h2>Quill Rich Text Editor</h2>
+    <div id="quill-div">
+      <h2>The basics</h2>
 
-<body>
-  <h2>Quill Rich Text Editor</h2>
-  <div id="quill-div">
-    <h2>The basics</h2>
+      <p>
+        Mispellings and grammatical errors can effect your credibility. The same
+        goes for misused commas, and other types of punctuation . Not only will
+        Grammarly underline these issues in red, it will also showed you how to
+        correctly write the sentence.
+      </p>
 
-    <p>
-      Mispellings and grammatical errors can effect your credibility. The same
-      goes for misused commas, and other types of punctuation . Not only will
-      Grammarly underline these issues in red, it will also showed you how to
-      correctly write the sentence.
-    </p>
+      <p>
+        Underlines that are blue indicate that Grammarly has spotted a sentence
+        that is unnecessarily wordy. You'll find suggestions that can possibly
+        help you revise a wordy sentence in an effortless manner.
+      </p>
 
-    <p>
-      Underlines that are blue indicate that Grammarly has spotted a sentence
-      that is unnecessarily wordy. You'll find suggestions that can possibly
-      help you revise a wordy sentence in an effortless manner.
-    </p>
+      <p>But wait...there's more?</p>
 
-    <p>
-      But wait...there's more?
-    </p>
+      <p>
+        Grammarly can give you very helpful feedback on your writing. Passive
+        voice can be fixed by Grammarly, and it can handle classical word-choice
+        mistakes.
+      </p>
+      <p>
+        It can even help when you wanna refine ur slang or formality level.
+        That's especially useful when writing for a broad audience ranging from
+        businessmen to friends and family, don't you think? It'll inspect your
+        vocabulary carefully and suggest the best word to make sure you don't
+        have to analyze your writing too much.
+      </p>
+    </div>
 
-    <p>
-      Grammarly can give you very helpful feedback on your writing. Passive
-      voice can be fixed by Grammarly, and it can handle classical word-choice
-      mistakes.
-    </p>
-    <p>
-      It can even help when you wanna refine ur slang or formality level.
-      That's especially useful when writing for a broad audience ranging from
-      businessmen to friends and family, don't you think? It'll inspect your
-      vocabulary carefully and suggest the best word to make sure you don't
-      have to analyze your writing too much.
-    </p>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.1.14?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.13?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
-  <script>
-    // Initialize a Quill editor
-    var quill = new Quill("#quill-div", {
-      theme: "snow"
-    });
-
-    // Configure the Grammarly Text Editor SDK
-    Grammarly.init().then((grammarly) => {
-      grammarly.addPlugin(quill.root, {
-        autocomplete: "on",
-        documentDialect: "british"
+    <script>
+      // Initialize a Quill editor
+      var quill = new Quill("#quill-div", {
+        theme: "snow",
       });
-    });
-  </script>
-</body>
 
+      // Configure the Grammarly Text Editor SDK
+      Grammarly.init().then((grammarly) => {
+        grammarly.addPlugin(quill.root, {
+          autocomplete: "on",
+          documentDialect: "british",
+        });
+      });
+    </script>
+  </body>
 </html>
