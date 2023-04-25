@@ -33,6 +33,9 @@ jose.importJWK(privateKeyData).then((privateKey) => {
       return;
     }
 
+    // Generate the JWT assertion based on the request
+    // This is the code you will need to add to your server after you have verified that the request
+    // is from a valid user.
     const now = Math.floor(new Date().getTime() / 1000);  // Epoch time in seconds
     const issuedAt = now - 5;                 // Backdate by 5 seconds to account for any clock skew
     const expirationTime = issuedAt + 5 * 60; // Assertion will be valid for about 5 minutes
@@ -51,5 +54,5 @@ jose.importJWK(privateKeyData).then((privateKey) => {
 
   const port = process.env.PORT || 8080;
   console.log(`Starting server at http://127.0.0.1:${port}`);
-  server.listen(port);
+  server.listen(port, '127.0.0.1'); // limit this server to only work from localhost
 });
