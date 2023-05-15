@@ -47,23 +47,23 @@
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
 
   <body>
-    <h2>EditorJS Rich Text Editor</h2>
+    <h2>Editor.js Rich Text Editor</h2>
     <div id="editorjs"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.18?clientId"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.3.18"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
 
     <script>
       (async () => {
-        grammarly = await Grammarly.init("client_9m1fYK3MPQxwKsib5CxtpB");
+        const grammarly = await Grammarly.init("client_9m1fYK3MPQxwKsib5CxtpB");
 
-        const addGrammarly = (htmlElement) => {
-          grammarly.addPlugin(htmlElement, { activation: "immediate" });
+        const config = {
+          activation: "immediate"
         };
+
         // Initialize an empty EditorJS editor
         const editor = new EditorJS({
           holder: "editorjs",
-          autofocus: true,
           data: {
             blocks: [
               {
@@ -93,16 +93,15 @@
             const initialEditor = document.querySelector("#editorjs");
             editableDivs = initialEditor.querySelectorAll("[contenteditable]");
             editableDivs.forEach((editable) => {
-              addGrammarly(editable);
+              grammarly.addPlugin(editable, config);
             });
           },
           onChange: (api, event) => {
             const type = event.type;
             if (type === "block-added") {
-              // Get block's contenteditable div
               const detail = event.detail.target.holder;
               editableDiv = detail.querySelector("[contenteditable]");
-              addGrammarly(editableDiv);
+              grammarly.addPlugin(editableDiv, config);
             }
           }
         });
