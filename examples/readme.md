@@ -95,6 +95,8 @@ These apps show how you can add the Text Editor Plugin to various rich text edit
 - **Quill:**
   - [JavaScript Example App](./editor-sdk-quill/)
   - [JavaScript Example App (Imperative)](./editor-sdk-quill-imperative/)
+- **Editor.js:**
+  - [Editor.js Example App](./editor-sdk-editorjs/)
 - **Slate:**
   - [React JavaScript Example App](./editor-sdk-react-slate/)
 - **TinyMCE:**
