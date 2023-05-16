@@ -8,7 +8,7 @@ You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/
 
 ## How it works
 
-[index.html](./public/index.html) contains a `<div>`. JavaScript code toward the bottom of the file initializes the Editor.js text editor on that `<div>` and also adds Grammarly suggestions to that `<div>`. See [index.html](./public/index.html) for the full code example.
+[index.html](./public/index.html) contains a `<div>`. JavaScript code toward the bottom of the file initializes the Editor.js text editor on that `<div>` and also adds Grammarly suggestions to that `<div>`. Check out [index.html](./public/index.html) for the full code example.
 
 Learn more about how to add Grammarly suggestions to rich text editors by visiting the [Grammarly for Developers documentation](https://developer.grammarly.com/docs/#supported-text-editors).
 
