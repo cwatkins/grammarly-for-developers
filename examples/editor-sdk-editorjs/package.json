@@ -1,5 +1,15 @@
 {
   "name": "grammarly-example-editor-sdk-editorjs",
   "version": "1.0.2",
-  "description": "Example that uses @grammarly/editor-sdk with Editor.js"
+  "description": "Example that uses @grammarly/editor-sdk with Editor.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
