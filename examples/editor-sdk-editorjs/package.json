@@ -1,6 +1,7 @@
 {
   "name": "grammarly-example-editor-sdk-editorjs",
   "version": "1.0.2",
+  "main": "public/index.html",
   "description": "Example that uses @grammarly/editor-sdk with Editor.js",
   "dependencies": {},
   "devDependencies": {
