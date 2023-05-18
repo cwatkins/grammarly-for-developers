@@ -46,7 +46,7 @@
     </style>
   </head>
   <body>
-    <h2>Plugin Turned Off Event</h2>
+    <h2>Plugin Events</h2>
     <grammarly-editor-plugin config.introText="We use Grammarly to give you writing assistance.">
       <div contenteditable="true">
         <h3>The basics</h3>
@@ -76,6 +76,7 @@
       editor.addEventListener("session-stats", updateLastEvent)
       editor.addEventListener("suggestion-card-open", updateLastEvent)
       editor.addEventListener("suggestion-card-close", updateLastEvent)
+      editor.addEventListener("suggestion-card-action", updateLastEvent)
 
       const events = []
       function updateLastEvent(event) {
