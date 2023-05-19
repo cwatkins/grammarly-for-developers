@@ -52,12 +52,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
 
     <script>
-      (async () => {
+      window.addEventListener("DOMContentLoaded", async () => {
         const grammarly = await Grammarly.init("client_9m1fYK3MPQxwKsib5CxtpB");
-
-        const config = {
-          activation: "immediate"
-        };
 
         // Initialize an empty EditorJS editor
         const editor = new EditorJS({
@@ -89,10 +85,10 @@
           },
           onReady: () => {
             const initialEditor = document.querySelector("#editorjs");
-            grammarly.addPlugin(initialEditor, config);
+            grammarly.addPlugin(initialEditor);
           }
         });
-      })();
+      })
     </script>
   </body>
 </html>
