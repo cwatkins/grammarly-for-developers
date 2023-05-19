@@ -1,10 +1,11 @@
-# Grammarly Text Editor SDK with Session and Document Stats
+# Grammarly Text Editor SDK for React: Session and Document Stats
 
-This demo shows how to track session and [document](https://developer.grammarly.com/docs/api/editor-sdk/documentstats) stats using the Grammarly Text Editor Plugin's built-in [callback functions](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#ondocumentstats).
+This demo shows how to listen for and handle the `session-stats` and `document-stats` events using the Grammarly Text Editor Plugin for React's built-in [callback functions](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks).
+- [session-stats](https://developer.grammarly.com/docs/events#session-stats) is an event emitted by the plugin that returns a [SessionStats](https://developer.grammarly.com/docs/api/editor-sdk/sessionstats) object.
+- [document-stats](https://developer.grammarly.com/docs/events#document-stats) is an event emitted by the plugin that returns a [DocumentStats](https://developer.grammarly.com/docs/api/editor-sdk/documentstats) object.
 
-[`SessionStats`](https://developer.grammarly.com/docs/api/editor-sdk/sessionstats) is an event that contains statistics about the [user's] Grammarly session, whereas [`DocumentStats`](https://developer.grammarly.com/docs/api/editor-sdk/documentstats) is an event that contains statistics about the user-entered text.
+**Note**: The `session-stats` and `document-stats` events are only emitted for applications on the [Plus plan](https://developer.grammarly.com/plans). Check out the [Custom Events](https://developer.grammarly.com/docs/events#custom-events) documentation page for a full list of events.
 
-**Note**: The ability to receive real-time session and document stats is only available on the [Plus plan](https://developer.grammarly.com/plans).
 
 ## Try the demo
 
@@ -12,7 +13,16 @@ You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/
 
 ## How it works
 
-The `GrammarlyEditorPlugin` exposes the [`onSessionStats`](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#onsessionstats) and [`onDocumentStats`](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#ondocumentstats) properties. The `onSessionStats` callback executes with a [`SessionStats`](https://developer.grammarly.com/docs/api/editor-sdk/sessionstats) event triggered when new session information is available. The `onDocumentStats` callback executes with a [`DocumentStats`](https://developer.grammarly.com/docs/api/editor-sdk/documentstats) event when text is written.
+The `<GrammarlyEditorPlugin>` React component contains callback props for events that are emitted by the Text Editor Plugin. As an example, the [onSessionStats](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#onsessionstats) and [onDocumentStats](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#ondocumentstats) callbacks listen for and handle the `session-stats` and `document-stats` events. 
+
+```
+<GrammarlyEditorPlugin
+  onDocumentStats={(evt) => handleDocStats(evt.detail)}
+  onSessionStats={(evt) => handleSessionStats(evt.detail)}
+>
+```
+
+In the provided example on this page, the `onSessionStats` callback executes and returns a `SessionStats` object when new session information is available, whereas the `onDocumentStats` callback executes and returns a `DocumentStats` object when text is written in the plugin. Both callback props use anonymous functions to receive the event data (`evt`) as a parameter and then pass the event data (the read-only `detail` property) into the `handleDocStats()` and `handleSessionStats()` functions.  
 
 ## Get the code
 
