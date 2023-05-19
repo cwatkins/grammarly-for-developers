@@ -84,8 +84,34 @@
             ]
           },
           onReady: () => {
-            const initialEditor = document.querySelector("#editorjs");
-            grammarly.addPlugin(initialEditor);
+           const initialEditor = document.querySelector("#editorjs");
+            editableDivs = initialEditor.querySelectorAll("[contenteditable]");
+            editableDivs.forEach((editable) => {
+              grammarly.addPlugin(editable);
+            });
+          }, 
+          onChange: (api, events ) => {
+            const blockEvents = Array.isArray(events) ? events : [events];
+              blockEvents.forEach((event) => {
+              const type = event.type;
+
+              // Add the Grammarly plugin to new blocks
+              if (type === "block-added") {
+                const block = event.detail.target.holder;
+                const editableDiv = block.querySelector("[contenteditable]");
+                grammarly.addPlugin(editableDiv);
+              }
+
+              // Reconnect the Grammarly plugin if the block moves
+              if (type === "block-moved") {
+                const block = event.detail.target.holder;
+                const editableDiv = block.querySelector("[contenteditable]");
+                const grammarlyPlugin = block.querySelector(
+                  "grammarly-editor-plugin"
+                );
+                grammarlyPlugin.connect(editableDiv);
+              }
+            });
           }
         });
       })
