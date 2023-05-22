@@ -2,14 +2,5 @@
   "name": "grammarly-example-editor-sdk-tinymce-imperative",
   "version": "1.0.2",
   "description": "Example that uses @grammarly/editor-sdk in an imperative way with TinyMCE",
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "main": "public/index.html"
 }

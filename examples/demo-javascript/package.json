@@ -2,13 +2,5 @@
   "name": "demo-javascript-app",
   "version": "1.0.0",
   "description": "Demo JavaScript app that can be used when trying the Grammarly Text Editor SDK",
-  "main": "index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "parcel-bundler": "^1.6.1"
-  },
-  "keywords": []
+  "main": "index.html"
 }
