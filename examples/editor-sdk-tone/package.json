@@ -2,5 +2,5 @@
   "name": "grammarly-example-editor-sdk-tone",
   "version": "1.0.2",
   "main": "public/index.html",
-  "description": "Example integration for @grammarly/editor-sdk with Tone Detector"
+  "description": "Example integration for @grammarly/editor-sdk with Tone Detector" 
 }

@@ -2,6 +2,7 @@
   "name": "grammarly-example-editor-sdk",
   "version": "1.0.2",
   "description": "Example integration for @grammarly/editor-sdk",
+  "main": "public/index.html",
   "dependencies": {},
   "devDependencies": {
     "typescript": "3.8.3"

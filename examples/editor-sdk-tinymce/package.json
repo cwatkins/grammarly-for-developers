@@ -2,6 +2,7 @@
   "name": "grammarly-example-editor-sdk-tinymce",
   "version": "1.0.2",
   "description": "Example that uses @grammarly/editor-sdk with TinyMCE",
+  "main": "public/index.html",
   "dependencies": {},
   "devDependencies": {
     "typescript": "3.8.3"

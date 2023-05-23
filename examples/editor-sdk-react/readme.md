@@ -4,7 +4,7 @@ This demo shows how to add the [Grammarly Text Editor SDK](https://developer.gra
 
 ## Try the demo
 
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/javascript-plugin/tree/main/examples/editor-sdk-react).
+You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-react).
 
 ## How it works
 

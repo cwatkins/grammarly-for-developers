@@ -2,6 +2,7 @@
   "name": "trusted-auth",
   "version": "1.0.0",
   "description": "Trusted Authentication code examples",
+  "main": "public/index.html",
   "scripts": {},
   "author": ""
 }
