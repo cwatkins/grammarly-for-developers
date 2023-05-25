@@ -50,14 +50,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@grammarly/editor-sdk@2.4.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@latest"></script>
 
     <script>
       window.addEventListener("DOMContentLoaded", async () => {
-        const grammarly = await Grammarly.init("client_9m1fYK3MPQxwKsib5CxtpB");
-
+        class WrapInGrammarly extends Paragraph {
+          render() {
+            const plugin = document.createElement("grammarly-editor-plugin");
+            plugin.setAttribute("clientId", "client_9m1fYK3MPQxwKsib5CxtpB");
+            plugin.setAttribute("config.activation", "immediate");
+            plugin.append(super.render());
+            return plugin;
+          }
+        }
         // Initialize an empty EditorJS editor
         const editor = new EditorJS({
           holder: "editorjs",
+          tools: { paragraph: WrapInGrammarly },
           data: {
             blocks: [
               {
@@ -82,39 +91,9 @@
                 }
               }
             ]
-          },
-          onReady: () => {
-           const initialEditor = document.querySelector("#editorjs");
-            editableDivs = initialEditor.querySelectorAll("[contenteditable]");
-            editableDivs.forEach((editable) => {
-              grammarly.addPlugin(editable);
-            });
-          }, 
-          onChange: (api, events ) => {
-            const blockEvents = Array.isArray(events) ? events : [events];
-              blockEvents.forEach((event) => {
-              const type = event.type;
-
-              // Add the Grammarly plugin to new blocks
-              if (type === "block-added") {
-                const block = event.detail.target.holder;
-                const editableDiv = block.querySelector("[contenteditable]");
-                grammarly.addPlugin(editableDiv);
-              }
-
-              // Reconnect the Grammarly plugin if the block moves
-              if (type === "block-moved") {
-                const block = event.detail.target.holder;
-                const editableDiv = block.querySelector("[contenteditable]");
-                const grammarlyPlugin = block.querySelector(
-                  "grammarly-editor-plugin"
-                );
-                grammarlyPlugin.connect(editableDiv);
-              }
-            });
           }
         });
-      })
+      });
     </script>
   </body>
 </html>
