@@ -1,16 +1,14 @@
 {
   "name": "grammarly-example-editor-sdk-editorjs",
   "version": "1.0.2",
-  "main": "public/index.html",
   "description": "Example that uses @grammarly/editor-sdk with Editor.js",
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "vite": "^4.3.9"
   }
 }
