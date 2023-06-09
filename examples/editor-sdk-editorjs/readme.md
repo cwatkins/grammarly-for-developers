@@ -17,19 +17,13 @@ With npm:\
 With pnpm:\
 `pnpm install`
 
-With yarn:\
-`yarn install` 
-
 ### 2. Run the project.
 
 With npm:\
-`npm run vite`
+`npm run dev`
 
 With pnpm:\
 `pnpm vite`
-
-With yarn:\
-`yarn vite`
 
 ### 3. Navigate the project.
 
