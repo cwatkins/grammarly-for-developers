@@ -67,11 +67,11 @@ You can find Grammarly for Developers on social media. Be sure to follow us on y
 The [Grammarly for Developers blog](https://www.grammarly.com/blog/developer/) is your go-to source for our latest announcements, updates, tutorials, stories, articles, and more. Read the latest posts below!
 
 <!-- BLOG-POST-LIST:START -->
+- [How We Optimize Performance for the Grammarly Text Editor SDK](https://www.grammarly.com/blog/developer/how-we-optimize-performance/)
 - [The Syntax: What’s New in Grammarly for Developers &lpar;June 2023&rpar;](https://www.grammarly.com/blog/developer/syntax-whats-new-june-2023/)
 - [10 Best Practices for Writing Documentation &lpar;For Those Who Would Rather Do Anything Else&rpar;](https://www.grammarly.com/blog/developer/10-best-practices-writing-documentation/)
 - [How to Add Writing Assistance to Any JavaScript App in Minutes](https://www.grammarly.com/blog/developer/writing-assistance-javascript-app/)
 - [The Syntax: What’s New in Grammarly for Developers &lpar;February 2023&rpar;](https://www.grammarly.com/blog/developer/syntax-whats-new-february-2023/)
-- [5 Strategies for Using Writing to Level Up Your Technical Career](https://www.grammarly.com/blog/developer/5-strategies-using-writing-level-up-technical-career/)
 <!-- BLOG-POST-LIST:END -->
 
 ## Other resources 📖
