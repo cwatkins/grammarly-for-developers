@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [CKEditor](https://ckeditor.com/) rich text editor.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-ckeditor?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) contains a `<div>`. The `<div>` is wrapped with the `<grammarly-editor-plugin>` tag, so that Grammarly suggestions will be displayed in the `div`. JavaScript code toward the bottom of the file creates a new [classic editor](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) instance in that `<div>` and also configures the Grammarly Text Editor SDK. See [index.html](./public/index.html) for the full code example.

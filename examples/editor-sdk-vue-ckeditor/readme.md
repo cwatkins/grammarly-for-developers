@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [CKEditor](https://ckeditor.com/) rich text editor in Vue.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-vue-ckeditor?file=/src/components/Editors.vue).
-
 ## How it works
 
 The `<GrammarlyEditorPlugin>` component wraps a [classic editor](https://ckeditor.com/docs/ckeditor5/latest/api/module_editor-classic_classiceditor-ClassicEditor.html) in order to add Grammarly suggestions to it. The `<Grammarly>` component wraps the `<GrammarlyEditorPlugin>` component and configures the Grammarly Text Editor SDK. See [Editors.js](./src/components/Editors.vue) for the full code example.

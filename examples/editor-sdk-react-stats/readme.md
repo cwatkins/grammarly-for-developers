@@ -7,10 +7,6 @@ This demo shows how to listen for and handle the `session-stats` and `document-s
 **Note**: The `session-stats` and `document-stats` events are only emitted for applications on the [Plus plan](https://developer.grammarly.com/plans). Check out the [Custom Events](https://developer.grammarly.com/docs/events#custom-events) documentation page for a full list of events.
 
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-react-stats?file=/src/Editor.js).
-
 ## How it works
 
 The `<GrammarlyEditorPlugin>` React component contains callback props for events that are emitted by the Text Editor Plugin. As an example, the [onSessionStats](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#onsessionstats) and [onDocumentStats](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorplugincallbacks#ondocumentstats) callbacks listen for and handle the `session-stats` and `document-stats` events. 

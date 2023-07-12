@@ -2,10 +2,6 @@
 
 This demo shows how to add [autocomplete](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#autocomplete) to  [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-autocomplete?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) contains `<input>`, `<textarea>` and `<div contenteditable>` elements. These elements are wrapped with the `<grammarly-editor-plugin>` tag so that Grammarly suggestions will be displayed in them. JavaScript code toward the bottom of the file configures the Grammarly Text Editor SDK. See [index.html](./public/index.html) for the full code example.

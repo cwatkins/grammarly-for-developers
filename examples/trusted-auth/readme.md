@@ -2,10 +2,6 @@
 
 This demo shows how to configure the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to use a custom function as a value for the `oauthAssertionProvider` attribute. The example uses a vanilla JavaScript app.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/trusted-auth?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) contains a `<textarea>`. The example uses the [`oauthAssertionProvider` attribute](https://developer.grammarly.com/docs/editor-sdk-intro#usage) to provide trusted authentication assertions to the SDK.

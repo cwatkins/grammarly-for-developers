@@ -2,10 +2,6 @@
 
 This demo shows how to configure the [documentDomain](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#documentdomain) for the [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-document-domain?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) and the other HTML files in this repository contain `div contenteditable` elements. We've added the Grammarly Text Editor Plugin to these elements by wrapping them with the `<grammarly-editor-plugin>` web component. The plugin displays Grammarly suggestions as users enter text. 

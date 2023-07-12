@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>`, `<input>`, and elements with attribute `contenteditable="true"` in an Angular app.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-angular).
-
 ## How it works
 
 [app.component.ts](./src/app/app.component.ts) finds the `<textarea>`, `<input>`, and `<div>` (that is `contenteditable`) that are in [app.component.html](./src/app/app.component.html) and then, for each element, invokes [addPlugin()](https://developer.grammarly.com/docs/api/editor-sdk/editorsdk#addplugin) to add Grammarly's writing suggestions in an imperative way.

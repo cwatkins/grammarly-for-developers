@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>`, `<input>`, and elements with attribute `contenteditable="true"` in a Vue app. 
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-vue).
-
 ## How it works
 
 [Editors.vue](./src/components/Editors.vue) contains a `<textarea>`, `<input>`, and `<div>` that is `contenteditable`, with each element wrapped with the `<GrammarlyEditorPlugin>` component. For rendering, [App.vue](./src/App.vue) specifies the Editors in [Editors.vue](./src/components/Editors.vue) that have text defined in [demo.js](./src/components/demo.js).

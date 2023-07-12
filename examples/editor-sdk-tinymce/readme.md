@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [TinyMCE](https://www.tiny.cloud/) rich text editor.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-tinymce?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) contains a `<textarea>` and a `<div>`. The `<textarea>` and `<div>` are each wrapped with the `<grammarly-editor-plugin>` tag, so that Grammarly suggestions will be displayed in those elements. JavaScript code toward the bottom of the file initializes TinyMCE on those elements and also configures the Grammarly Text Editor SDK.  See [index.html](./public/index.html) for the full code example.

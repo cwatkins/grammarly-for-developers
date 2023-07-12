@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>`, `<input>`, and `<div>` in a vanilla JavaScript app. 
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) contains a `<textarea>`, `<input>`, and `<div>`. The example uses the [`data-grammarly` attribute](https://developer.grammarly.com/docs/editor-sdk-intro#usage) to add  Grammarly suggestions to the HTML elements. See [index.html](./public/index.html) for the full code example.

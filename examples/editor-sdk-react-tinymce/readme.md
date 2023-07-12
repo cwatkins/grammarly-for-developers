@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [TinyMCE](https://www.tiny.cloud/) rich text editor in React.
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-react-tinymce?file=/src/Editors.js).
-
 ## How it works
 
 The `<GrammarlyEditorPlugin>` component wraps a TinyMCE rich text editor in order to add Grammarly suggestions to it. The `<Grammarly>` component wraps the `<GrammarlyEditorPlugin>` component and configures the Grammarly Text Editor SDK. See [Editors.js](./src/Editors.js) for the full code example.

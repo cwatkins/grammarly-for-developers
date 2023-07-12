@@ -2,10 +2,6 @@
 
 This demo shows how to configure [documentDialect](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#documentdialect) for the [Grammarly Text Editor Plugin](https://developer.grammarly.com/).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-document-dialect?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) and the other HTML files in this repository contain `<div contenteditable>` elements. These elements are wrapped with the `<grammarly-editor-plugin>` web component so that Grammarly suggestions display in the specified text areas. 

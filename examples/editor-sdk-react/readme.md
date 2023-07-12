@@ -2,10 +2,6 @@
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>`, `<input>`, and elements with attribute `contenteditable="true"` in a React app. 
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-react).
-
 ## How it works
 
 [Editors.js](./src/Editors.js) contains a `<textarea>`, `<input>`, and `<div>` that is `contenteditable`, with each element wrapped with the `<GrammarlyEditorPlugin>` component. For rendering, [index.js](./src/index.js) specifies the Editors in [Editors.js](./src/Editors.js) that have text defined in [demo.js](./src/demo.js).

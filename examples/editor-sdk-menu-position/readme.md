@@ -2,10 +2,6 @@
 
 This demo shows how to set the [menu position](https://developer.grammarly.com/docs/api/editor-sdk/grammarlybuttonelement#menuposition) of the Grammarly button in the [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-menu-position?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) and the other HTML files in this repository explicitly add the `<grammarly-button>` element to the page. The element includes the `menu-position` attribute, setting it to either `left` or `right`.

@@ -2,10 +2,6 @@
 
 This demo shows the different options for the [Grammarly Text Editor SDK](https://developer.grammarly.com/) [activation property](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#activation).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-activation?file=/public/index.html).
-
 ## How it works
 
 This example contains two files that are identical except for the value of the `activation` property:

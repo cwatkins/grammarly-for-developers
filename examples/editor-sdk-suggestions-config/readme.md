@@ -2,10 +2,6 @@
 
 This demo shows how to turn on [categories of writing suggestions](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#suggestions) in the [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
-## Try the demo
-
-You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-suggestions-config?file=/public/index.html).
-
 ## How it works
 
 [index.html](./public/index.html) and the other HTML files in this repository contain `<div contenteditable>` elements. These elements are wrapped with the `<grammarly-editor-plugin>` web component so that Grammarly's writing suggestions are displayed within the `contenteditable` text areas. 
